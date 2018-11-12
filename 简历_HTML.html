@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>简历</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>罗凯健—Android高级开发工程师/Android开发经理</h1>
+<hr />
+<h2>个人资料</h2>
+<ul>
+<li>姓名：罗凯健</li>
+<li>性别：男</li>
+<li>电话：15627775359</li>
+<li>邮箱：446768954@qq.com</li>
+</ul>
+<h2>个人技能</h2>
+<ul>
+<li>五年开发经验，一年团队管理经验（8人）  </li>
+<li>编程语言：JAVA，Kotlin  </li>
+<li>主导过多款大型App开发，有10人以上的项目架构经验，对项目长期迭代有良好的控制能力  </li>
+<li>熟悉Android高性能编程，有成熟的优化思路和经验  </li>
+<li>对Android Framework和虚拟机有整体的认识，了解组件的基本原理  </li>
+</ul>
+<h2>文档博客</h2>
+<p>部分组内培训的文档和技术文档：  </p>
+<ul>
+<li><a href="https://www.kancloud.cn/dankel/databinding/531420">databinding技术文档：https://www.kancloud.cn/dankel/databinding/531420</a>  </li>
+<li><a href="https://www.kancloud.cn/dankel/databinding/532314">MVP+databinding框架、规则文档：https://www.kancloud.cn/dankel/databinding/532314</a></li>
+<li><a href="https://www.kancloud.cn/dankel/hm_android/592677">模块通信路由组件文档：https://www.kancloud.cn/dankel/hm_android/592677</a></li>
+<li><a href="https://www.kancloud.cn/dankel/hm_android/696024">Android代码模板开发：https://www.kancloud.cn/dankel/hm_android/696024</a></li>
+</ul>
+<h2>工作经历</h2>
+<h3></h3>
+<ul>
+<li>公司名称：<strong>广州大象健康科技有限公司</strong>  </li>
+<li>工作岗位：Android开发技术经理</li>
+<li>工作时间：2017.10 - 2018.08  </li>
+<li>
+职责描述：  
+
+<ul>
+<li>负责8人的Android技术团队的任务分派、跟进、提升等管理工作。</li>
+<li>负责代码管理、codereview、技术分享等技术管理工作。</li>
+<li>负责应用架构开发，核心模块维护。  
+</li>
+<li>负责对内的技术培训和技术文档编写。  
+</li>
+<li>负责新技术的预研和落地。    
+</li>
+</ul>
+</li>
+</ul>
+<h3></h3>
+<ul>
+<li>公司名称：<strong>广州大象健康科技有限公司</strong>  </li>
+<li>工作岗位：Android高级开发工程师</li>
+<li>工作时间：2015.10 - 2017.10  </li>
+<li>
+职责描述：  
+
+<ul>
+<li>从零开始构建项目，早期负责大部分开发工作，后来负责核心模块，并从项目中抽取组件。  
+</li>
+<li>负责应用的架构演进、UI及功能组件库的开发和维护。  
+</li>
+<li>解决项目过程中的疑难问题，制定项目的技术方案。    
+</li>
+<li>负责代码管理、codereview、技术分享等技术管理工作。  
+</li>
+</ul>
+</li>
+</ul>
+<h3></h3>
+<ul>
+<li>公司名称：<strong>广州时众网络有限公司</strong>（解散）  </li>
+<li>工作岗位：Android开发工程师</li>
+<li>工作时间：2015.04 - 2015.09  </li>
+<li>
+职责描述：  
+
+<ul>
+<li>Android端架构负责，框架/功能库编写和选择   
+</li>
+<li>部分服务端接口编写，应用层协议商讨和指定  
+</li>
+<li>自己负责的功能模块编写和调试  
+</li>
+</ul>
+</li>
+</ul>
+<h3></h3>
+<ul>
+<li>公司名称：<strong>深圳驼铃网络有限公司</strong>  </li>
+<li>工作岗位：Android开发工程师</li>
+<li>工作时间：2014.03-2014-12</li>
+</ul>
+<h2>项目经验</h2>
+<h5>健康猫</h5>
+<ul>
+<li>项目描述：以“运动健康物联网”科技为核心的手机应用，根据每个人不同的个体情况，在线生成个性化运动健康管理方案，同时提供线上运动电商、约教练、预约运动场馆、共享运动器材等立体解决方案，实现国民“随时随地、 科学运动”。</li>
+<li>项目时间：2015.11-至今</li>
+<li>参与人数：14人</li>
+<li>项目角色：Android技术负责人</li>
+<li>
+工作描述：  
+
+<ol>
+<li>项目初期负责大部分业务模块的快速实现和初期组件封装；</li>
+<li>从复用代码和控件中提取基础组件和维护，并上传到内网私有maven，减少重复开发，提供效率，为日后多应用重用组件作准备；</li>
+<li>在迭代过程中开发MVP框架并且在组内推广培训，增强项目规范，降低项目耦合度；</li>
+<li>在日益增大的项目背景下，独立完成业务梳理和分层，实现了项目的模块化，加快编译速度，进一步降低项目复杂度；  
+</li>
+<li>把项目从SVN迁移到git，并采用了符合项目节奏的工作流程；</li>
+<li>在项目大改版期间，重写了大部分控件并使其更符合Android新特性，例如开发新的下拉刷新控件，并实现NestedScroll机制，使其与CoornatorLayout更好的配合；</li>
+<li>把databinding带入项目框架中，为其开发相应的基础组件并培训推广，提高开发效率；</li>
+<li>为团队开发IDE工程模板插件，规范业务流程和代码规范，减少重复代码编写，提高开发效率。  
+</li>
+</ol>
+</li>
+</ul>
+<h5>健康猫私教版</h5>
+<ul>
+<li>项目描述：是在原有健康猫APP上的私教管理功能的基础上拓展，专门为体育人才打造的创业平台，同时对于学员增加了专业的健康分析功能，并且提供了营业额统计、收入统计、订单管理、设备管理、日程管理、小店管理、团队管理等各种私教管理功能。</li>
+<li>项目时间：2017.11-至今</li>
+<li>参与人数：10人</li>
+<li>项目角色：Android技术负责人</li>
+<li>
+职责描述：
+<ol>
+<li>带领团队从零开始项目开发；</li>
+<li>为项目提供基础架构支持并负责部分基础业务开发；</li>
+<li>协调多个Anroid业务团队的开发对接；</li>
+<li>负责项目需求分析、任务安排，进度跟进，质量控制及向上的产出反馈等日常管理；</li>
+</ol>
+</li>
+<li>
+技术要点：
+<ol>
+<li>与健康猫项目在同一Project下，共用部分业务模块，通过<code>gradle.properties</code>中的环境变量配置各自的项目环境以及host模块。  
+</li>
+<li>其他与健康猫一致  
+</li>
+</ol>
+</li>
+</ul>
+<h5>健康管理家庭版 &amp; 健康管理直销员版（未上线）</h5>
+<ul>
+<li>项目描述：主要是为直销行业做的一个APP，方便把客户从线下转为线上，帮助直销商销售产品；分为S端、B端、C端；S端是用于管理用户权限以及商品添加等；B端是给直销商使用，可以对他的客户进行健康分的管理，有针对性的营销自己的商品；C端是给普通用户使用，对自己的健康值进行管理，APP为用户制作健康方案。</li>
+<li>项目时间：2018.03-至今</li>
+<li>参与人数：8人</li>
+<li>职责描述：Android负责人，同上，带领团队从零开始开发。</li>
+<li>
+技术要点：  
+
+<ol>
+<li>与健康猫&amp;健康猫私教版类似的架构，采用统一project 不同环境配置来复用部分业务模块</li>
+<li>其余基本一致</li>
+</ol>
+</li>
+</ul>
+<h5>其他中小型项目：</h5>
+<ul>
+<li>江西青少（江西政府项目）</li>
+<li>大象优品 </li>
+<li>健康猫TV（未上线）</li>
+</ul>
+<h6>更早的项目：</h6>
+<ul>
+<li>时众：生活类提示软件  </li>
+<li>吾邻：IM类软件</li>
+<li>车域通：o2o洗车软件  </li>
+</ul>
+<h2>教育经历</h2>
+<ul>
+<li>学校：<strong>广东科学技术职业学院（大专）</strong></li>
+<li>专业：计算机信息管理（2010.09 - 2013.06）</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
